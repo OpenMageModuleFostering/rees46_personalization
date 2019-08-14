@@ -26,6 +26,12 @@ class Rees46_Personalization_Helper_Data extends Mage_Core_Helper_Data
 	 */
 	const XML_PATH_SECRET_KEY     = 'personalization/view/secret_key';
 
+	/**
+	 * REES46 Expert Mode Flag
+	 * @var boolean
+	 */
+	const XML_PATH_EXPERT_MODE     = 'personalization/view/expert_mode';
+
 
     /**
      * Checks whether news can be displayed in the frontend
@@ -56,6 +62,17 @@ class Rees46_Personalization_Helper_Data extends Mage_Core_Helper_Data
 	public function getCartProductIds() {
 		$cart = Mage::getModel('checkout/cart')->getQuote();
 		return array_map(function($element){ return $element->getProductId(); }, $cart->getAllItems());
+	}
+
+	/**
+	 * Checks whether module works in expert mode
+	 *
+	 * @param integer|string|Mage_Core_Model_Store $store
+	 * @return boolean
+	 */
+	public function isExpertMode($store = null)
+	{
+		return Mage::getStoreConfigFlag(self::XML_PATH_EXPERT_MODE, $store);
 	}
 
 }
