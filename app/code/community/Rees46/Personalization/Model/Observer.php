@@ -82,7 +82,7 @@ class Rees46_Personalization_Model_Observer
 
 
 	/**
-	 * Подготавливает базовый массив данных о товаре для трекинга
+	 * Prepare base array of data about product for tracking
 	 * @param Mage_Catalog_Model_Product $product
 	 * @return array
 	 */
@@ -104,7 +104,7 @@ class Rees46_Personalization_Model_Observer
 			'url' => null,
 			'image_url' => $image,
 			'tags' => null,
-			// @todo: не забыть трекинг рекомендера
+			// @todo: do not forgot processing of recommender
 			'recommended_by' => null
 		);
 	}

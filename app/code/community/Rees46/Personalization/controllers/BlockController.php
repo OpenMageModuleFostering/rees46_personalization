@@ -36,7 +36,7 @@ class Rees46_Personalization_BlockController extends Mage_Core_Controller_Front_
 			->addAttributeToFilter('entity_id', array('in' => $product_ids))
 			->addAttributeToSelect($attributes);
 
-		// Сортируем товары так, как вернул REES46
+		// Sort items as REES46 returned
 		foreach($product_ids as $id) {
 			foreach($collection as $product) {
 				if($product->getId() == $id) {
@@ -49,10 +49,10 @@ class Rees46_Personalization_BlockController extends Mage_Core_Controller_Front_
 			$html = '<div class="rees46 rees46-recommend"><div class="recommender-block-title">' . Mage::helper('rees46_personalization')->__($recommender_type) . '</div><div class="recommended-items">';
 			foreach($products as $product) {
 
-				// При некоторых настройках недоступна большая фотография товара, поэтому находим ее другим способом
+				// Specific settings cause problems with large photos, so find it another way
 				$productForImage = Mage::getModel('catalog/product')->load($product->getId());
 
-				// Иногда к урлам добавляется какой-нибудь атрибут, поэтому нам нужно свой аккуратно вписать в уже имеющиеся
+				// Sometimes Magento adds special attributes to URL's, so add our attributes depending of this situation
 				$product_url = $product->getProductUrl(false);
 				if( strpos($product_url, '?') !== false ) {
 					$product_url = str_replace('?', '?recommended_by=' . $recommender_type . '&	', $product_url);
