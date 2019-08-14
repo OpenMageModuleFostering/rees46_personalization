@@ -1,13 +1,13 @@
 {
     "name": "OpenMageModuleFostering/Rees46_Personalization",
     "type": "magento-module",
-    "license": "GNU",
+    "license": "MIT",
     "homepage": "",
-    "description": "REES46 is free professional recommender system for e-commerce, with personalized merchandising, trigger and digest mailings, search personalization, etc. analyzes customers activity and recommend them best goods they are willing to buy for greater conversion and ARPPU.",
+    "description": "Marketing automation and progressive personalization suite to attract, convert and retain more customers. Boost your marketing efficiency with REES46.",
     "authors": [
     {
         "name": "REES46",
-        "email": "kechinoff@gmail.com"
+        "email": "ay@rees46.com"
     }
 ],
     "suggest": {
