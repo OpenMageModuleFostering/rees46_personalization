@@ -1,0 +1,17 @@
+{
+    "name": "OpenMageModuleFostering/Rees46_Personalization",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "REES46 analyzes customers activity and recommend them best goods they are willing to buy. It increases conversion, average sum of order and overall revenues for 24%. Automatically.
+",
+    "authors": [
+    {
+        "name": "Michael Kechinov",
+        "email": "kechinoff@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
