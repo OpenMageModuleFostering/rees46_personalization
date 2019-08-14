@@ -23,6 +23,7 @@
 	<!-- Category -->
 	<catalog_category_view translate="label">
 		<reference name="content">
+			<block type="core/template" name="rees46_category_popular" after="category.description" template="rees46/personalization/blocks/category_popular.phtml" />
 			<block type="core/template" name="rees46_category" after="category.products" template="rees46/personalization/blocks/category.phtml" />
 		</reference>
 	</catalog_category_view>

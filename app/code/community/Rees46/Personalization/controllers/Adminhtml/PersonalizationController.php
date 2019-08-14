@@ -13,7 +13,7 @@ class Rees46_Personalization_Adminhtml_PersonalizationController extends Mage_Ad
      */
     protected function _initAction()
     {
-        // load layout, set active menu and breadcrumbs
+        /* load layout, set active menu and breadcrumbs */
         $this->loadLayout()
             ->_setActiveMenu('personalization/overview')
             ->_addBreadcrumb(
