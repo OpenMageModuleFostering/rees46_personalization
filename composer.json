@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "GNU",
     "homepage": "",
-    "description": "REES46 is the professional recommender system for e-commerce, with personalized merchandising, trigger and digest mailings, search personalization, etc. analyzes customers activity and recommend them best goods they are willing to buy for greater conversion and ARPPU.",
+    "description": "REES 46 is a omnichannel platform of e-commerce personalization, including storefront personalization, trigger-based and transactional mailings, abandoned cart remarketing and high-precision segmentation service.",
     "authors": [
     {
         "name": "REES46",
