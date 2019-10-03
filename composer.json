@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Rees46_Personalization",
+    "name": "OpenMageModuleFostering\/Rees46_Personalization",
     "type": "magento-module",
     "license": "MIT",
     "homepage": "",
     "description": "Marketing automation and progressive personalization suite to attract, convert and retain more customers. Boost your marketing efficiency with REES46.",
     "authors": [
-    {
-        "name": "REES46",
-        "email": "ay@rees46.com"
-    }
-],
+        {
+            "name": "REES46",
+            "email": "ay@rees46.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
